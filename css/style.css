@@ -1,0 +1,15 @@
+body {
+ background-color:#FF7A08;
+  
+}
+.header{
+  background-color:#D75502;
+}
+
+#menu{
+  float:right;
+  position:relative;
+}
+#menu li{
+  display:inline-block;
+}
