@@ -1,5 +1,10 @@
+
+@media only screen and (min-width: 0px) {
+
 body {
  background-color:#FF7A08;
+ margin: 0;
+ padding: 0;
   
 }
 .header{
@@ -12,4 +17,32 @@ body {
 }
 #menu li{
   display:inline-block;
+}
+.tool-bar{
+  height: 50px;
+  background-color: #dd5c00;
+  
+  
+}
+
+}
+
+@media only screen and (min-width: 600px) {
+  
+  /* for tablets phone */
+  
+  
+  
+  
+}
+
+@media only screen and (min-width: 768px) {
+  
+  /* for desktop pc */
+  
+  
+  
+  
+  
+  
 }
