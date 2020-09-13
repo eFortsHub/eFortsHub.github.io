@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hbheadermargin {
+    position: fixed;
+    margin-top: 32px;
+    display: block;
+}
+
+hbHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 26px;
+    border-radius: 50px;
+}
+
+hbLogo a img {
+    width: 100px;
+
+
+}
+
+.hbHeaderMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.hbHeaderMenu li a {
+    text-decoration: none;
+
+}
