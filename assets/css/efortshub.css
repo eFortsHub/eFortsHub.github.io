@@ -4,25 +4,32 @@
     box-sizing: border-box;
 }
 
-hbheadermargin {    
-    margin-top: 32px;
-    display: block;
-}
-
 hbHeader {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    width: 80%;
-    border: 1px solid black;
     margin: auto;
+    margin-top: 32px;
+    box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
+    z-index: 5;
     padding: 26px;
     border-radius: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 
 hbLogo a img {
     width: 100px;
+    transition: ease-in-out 200ms ;
+
+
+}
+
+hbLogo a img:hover{
+    width: 125px;
 
 
 }
@@ -38,5 +45,16 @@ hbLogo a img {
 
 .hbHeaderMenu li a {
     text-decoration: none;
+    letter-spacing: 0px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    transition: ease-in-out 100ms ;
 
+}
+.hbHeaderMenu li a:hover{
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(165, 61, 1);
 }
