@@ -4,22 +4,31 @@
     box-sizing: border-box;
 }
 
-hbHeader {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    margin: auto;
-    margin-top: 32px;
-    box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
-    z-index: 5;
-    padding: 26px;
-    border-radius: 50px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+hbHamBurger{
+    display: none;
+    visibility: hidden;
+}
+
+
+hbLogo a img:hover{
+    width: 125px;
+
 
 }
+hbBanner{
+    display: block;
+
+}
+
+hbBackground{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+hbBanner hbBackground img{
+    width: 100%;
+}
+
 
 hbLogo a img {
     width: 100px;
@@ -28,22 +37,11 @@ hbLogo a img {
 
 }
 
-hbLogo a img:hover{
-    width: 125px;
-
-
+hbMenu hbList{
+    margin: 2px;
 }
 
-.hbHeaderMenu {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    list-style-type: none;
-    margin: 0;
-
-}
-
-.hbHeaderMenu li a {
+hbMenu hbList a {
     text-decoration: none;
     letter-spacing: 0px;
     font-size: medium;
@@ -52,9 +50,184 @@ hbLogo a img:hover{
     transition: ease-in-out 100ms ;
 
 }
-.hbHeaderMenu li a:hover{
+hbMenu hbList a:hover{
     font-size: large;
     font-weight: bolder;
     text-transform: uppercase;
     color: rgb(165, 61, 1);
 }
+
+
+hbMenuShow {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    list-style-type: none;
+
+}
+
+
+hbMenuHide {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    list-style-type: none;
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+
+    hbHeader {
+        background-color: rgba(255, 255, 255, 0.95);
+        min-height: 8vh;
+        margin-top: 10px;
+        box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
+        z-index: 100;
+        padding: 0;
+        border-radius: 35px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: fixed;
+        text-align: center;
+        display: block;
+    
+    }
+
+hbHamBurger{
+    display: block;
+    visibility: visible;
+    padding: 4px;
+}
+hbHamBurger hbBurger{
+    height: 3px;
+    width: 24px;
+    background-color: black;
+    display: block;
+    margin: 4px;
+}
+
+hbHamBurger:hover{
+    cursor: pointer;
+    background-color: bisque;
+    
+
+}
+
+
+    hbTabBar{
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    
+    
+    hbMenu {
+        display: none;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 70%;
+        list-style-type: none;
+    
+    }
+    hbMenu hbList{
+        display: block;
+        text-decoration: none;
+        margin: auto;
+        padding: 8px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+    hbHeader {
+        background-color: rgba(255, 255, 255, 0.95);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 10vh;
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
+        z-index: 100;
+        padding: 16px;
+        border-radius: 100px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: fixed;
+    
+    }
+    
+    hbMenu {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        list-style-type: none;
+        margin: 0;
+    
+    }
+    
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+hbHeader {
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
+    z-index: 100;
+    padding: 10px;
+    border-radius: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: fixed;
+
+}
+
+hbMenu {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+
+}
+hbMenu hbList{
+    margin: 12px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    hbMenu hbList{
+        margin: 24px;
+    }
+    hbMenu hbList a{
+        font-size: large;
+    }
+
+
+}
+
+
