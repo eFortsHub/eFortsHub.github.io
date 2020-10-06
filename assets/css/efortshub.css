@@ -31,7 +31,7 @@ hbBanner hbBackground img{
 
 
 hbLogo a img {
-    width: 100px;
+    width: 120px;
     transition: ease-in-out 200ms ;
 
 
@@ -51,44 +51,53 @@ hbMenu hbList a {
 
 }
 hbMenu hbList a:hover{
-    font-size: large;
     font-weight: bolder;
     text-transform: uppercase;
     color: rgb(165, 61, 1);
 }
 
 
-hbMenuShow {
+.hbMenuShow {
+    display: block;
+    visibility: visible;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    list-style-type: none;
+    transition: ease-in-out 100ms;
+
+}
+
+
+.hbMenuHide {
+    visibility: hidden;
     display: none;
     text-align: center;
     justify-content: center;
     margin: auto;
     width: 70%;
     list-style-type: none;
+    transition: ease-in-out 100ms;
 
 }
 
-
-hbMenuHide {
-    display: none;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    width: 70%;
-    list-style-type: none;
-
-}
+.transition{
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+    transition: ease-in-out 1s;
+  }
 
 
+/* Extra small devices (phones, 768px and down) */
 
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
 
     hbHeader {
         background-color: rgba(255, 255, 255, 0.95);
-        min-height: 8vh;
         margin-top: 10px;
         box-shadow: 1px 2px 30px 2px  rgba(0, 0, 0, 0.068);
         z-index: 100;
@@ -100,6 +109,12 @@ hbMenuHide {
         position: fixed;
         text-align: center;
         display: block;
+        overflow: hidden;
+    
+    }
+    hbLogo{
+        display: inline-block;
+        align-self: center;
     
     }
 
@@ -107,18 +122,24 @@ hbHamBurger{
     display: block;
     visibility: visible;
     padding: 4px;
+    align-self: center;
+    
 }
 hbHamBurger hbBurger{
-    height: 3px;
-    width: 24px;
+    height: 2px;
+    width: 22px;
     background-color: black;
     display: block;
-    margin: 4px;
+    margin: 5px;
+}
+
+
+hbHamBurger hbBurger.burger2{
+    width: 30px;
 }
 
 hbHamBurger:hover{
     cursor: pointer;
-    background-color: bisque;
     
 
 }
@@ -126,31 +147,41 @@ hbHamBurger:hover{
 
     hbTabBar{
         display: flex;
-        justify-content: space-around;
-        margin: 10px;
+        justify-content: space-between;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+
     }
-    
-    
-    hbMenu {
+
+    hbMenu{
         display: none;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        width: 70%;
-        list-style-type: none;
+        visibility: hidden;
+    } 
+
     
-    }
-    hbMenu hbList{
+    
+    hbMenu hbList {
+        width: 100%;
         display: block;
         text-decoration: none;
+        padding: 0;
         margin: auto;
-        padding: 8px;
+        /*border: 1pt solid rgba(0, 0, 0, 0.055);*/
+        border-top: 1px solid rgba(0, 0, 0, 0.11);
+        border-width: thin;
+    }
+    hbMenu hbList a{
+        display: block;
+        padding: 12px;
+        width: 100%;
     }
     
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) 
+ @media only screen and (min-width: 768) {
 
     hbHeader {
         background-color: rgba(255, 255, 255, 0.95);
@@ -179,8 +210,12 @@ hbHamBurger:hover{
         margin: 0;
     
     }
+
+    hbMenu hbList{
+        position: static;
+    }
     
-} 
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
