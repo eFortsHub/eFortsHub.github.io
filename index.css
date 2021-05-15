@@ -1,0 +1,88 @@
+* {
+	user-select:none;
+}
+
+body {
+	font-family:maven;
+}
+
+img {
+	pointer-events: none;
+}
+
+nav {
+	position:sticky !important;
+	top:0 !important;
+	z-index:1;
+}
+
+.btn-hire-green {
+	width:100%;
+}
+
+.header-2 {
+	background:#ffb700;
+}
+
+.messenger {
+	height:50px;
+	width:50px;
+	position:fixed;
+	bottom:5%;
+	right:5%;
+	background:white;
+	z-index:2;
+	border-radius:50%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	display:none;
+}
+
+.messenger i {
+	font-size:1.5rem;
+	color:#0078ff;
+}
+
+.locs {
+	background:#ffb700;
+}
+
+.locs :is(span, strong) {
+	font-size:0.8rem;
+}
+
+.locs span {
+	display:block;
+}
+
+.locs hr {
+	opacity:0;
+}
+
+footer {
+	position:relative;
+	bottom:0;
+	height:auto;
+	width:100%;
+	background:white;
+	box-sizing:border-box;
+	padding:10px;
+	display:flex;
+	align-items:center;
+	background:#0C3A63;
+	color:#fcfcfc;
+}
+
+footer ul {
+	list-style:none;
+}
+
+footer ul i {
+	margin-right:10px;
+}
+
+@font-face {
+	font-family:maven;
+	src:url(font.ttf);
+}
