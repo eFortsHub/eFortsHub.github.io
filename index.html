@@ -18,7 +18,252 @@
     <link rel="stylesheet" href="assets/css/efortshub.css" type="text/css">
     
 </head>
-<eFortsHub>
+    
+    
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">eFortsHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Learn
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web development</a></li>
+                            <li><a class="dropdown-item" href="#">Backend</a></li>
+                            <li><a class="dropdown-item" href="#">Android</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <button class="btn btn-outline-success btn-hire-green" type="submit">Hire me</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center p-4 header-2">
+        <img class="img-fluid" src="bg.png">
+        <h2>Do Hire me and let your thoughts become true</h2>
+        <button class="btn btn-dark">Hire Me Now</button>
+    </div>
+
+    <div class="container p-4">
+        <h2>Contact us</h2>
+        <hr>
+        <div>
+            <form>
+                <div class="form-floating my-2">
+                    <input type="text" class="form-control" id="fullNameInput" placeholder="Full Name">
+                    <label for="fullNameInput">Full name</label>
+                </div>
+                <div class="form-floating my-4">
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                    </div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave us a message" id="floatingTextarea" style="height: 100px;"></textarea>
+                    <label for="floatingTextarea">Leave us a message</label>
+                </div>
+                <div class="my-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I opt-in to receive marketing and promotional materials</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container p-4 locs" id="locs">
+        <h2>Location & Hours</h2>
+        <hr>
+        <strong>eFortsHub</strong>
+
+        <span>Chilmari, Kurigram</span>
+        <span>Rangpur, Bangladesh</span>
+        <hr>
+
+
+        <span>+8801907319190</span>
+        <span>apasad2019@gmail.com</span>
+
+        <hr>
+
+        <strong>Get directions</strong>
+
+        <hr>
+
+        <span>Saturday 9:00am - 5:00pm</span>
+        <span>Sunday 9:00am - 5:00pm</span>
+        <span>Monday 9:00am - 5:00pm</span>
+        <span>Tuesday 9:00am - 5:00pm</span>
+        <span>Wednesday 9:00am - 5:00pm</span>
+        <span>Thursday 9:00am - 5:00pm</span>
+        <span>Friday Closed</span>
+    </div>
+
+    <div class="messenger">
+        <i class="fab fa-facebook-messenger"></i>
+    </div>
+
+
+    <footer class="p-4 text-center">
+
+        <span>&copy; 2021 | eFortsHub</span>
+    </footer>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="107736440966509"
+        theme_color="#ffc300"
+        logged_in_greeting="Hi! Ask me if you have any question about our services"
+        logged_out_greeting="Hi! Ask me if you have any question about our services">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--
+            	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+            	-->
+
+    <script src="https://kit.fontawesome.com/058b803b78.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- 
+ <eFortsHub>
     <hbHeader>
         <hbTabBar>
         <hbLogo>
@@ -53,7 +298,6 @@
     <div style="margin: auto; text-align: center; justify-content: center;"><h1>Site is Under Constraction... :D </h1></div>
 
 
-    <!-- Script-->
 
     <script src="assets/js/eFortsHub.js" type="text/javascript"></script>
 
@@ -61,7 +305,6 @@
 
 
 
-<!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
@@ -79,7 +322,6 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
-      <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution=setup_tool
         page_id="107736440966509"
@@ -89,4 +331,6 @@
       </div>
 </eFortsHub>
 
+-->
+    
 </html>
